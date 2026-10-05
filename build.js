@@ -18,7 +18,7 @@ const template = `<!DOCTYPE html>
   <meta name="description" content="Проектування, продаж та монтаж натяжних стель в Івано-Франківську. Безкоштовний замір, гарантія 12 років, монтаж до 5 днів.">
   
   <!-- Модульні стилі -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
@@ -55,7 +55,7 @@ const template = `<!DOCTYPE html>
 {{footer}}
 
   <!-- Модульний скрипт -->
-  <script type="module" src="js/main.js"></script>
+  <script type="module" src="/js/main.js"></script>
 </body>
 </html>
 `;
