@@ -1,0 +1,13 @@
+{
+  "name": "elit-style",
+  "version": "1.0.0",
+  "description": "Сайт натяжних стель Еліт Стайл в Івано-Франківську",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,85 @@
+/* CTA & Forms */
+.cta {
+  color: #fff;
+  background: linear-gradient(135deg, rgba(51, 0, 51, 0.94), rgba(153, 0, 102, 0.9)),
+              url("../img/cta.jpg") center/cover no-repeat,
+              linear-gradient(135deg, var(--plum), var(--brand));
+}
+
+.cta h2 {
+  color: #fff;
+}
+
+.cta .box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px;
+  align-items: center;
+}
+
+.cta .lead {
+  color: #f7e6f1;
+}
+
+.cta form {
+  background: #fff;
+  padding: 28px;
+  border-radius: var(--r);
+  color: var(--ink);
+  box-shadow: 0 20px 40px rgba(34, 0, 34, 0.25);
+}
+
+/* Form Controls */
+form {
+  display: grid;
+  gap: 14px;
+}
+
+input,
+select {
+  font: inherit;
+  width: 100%;
+  padding: 14px 20px;
+  border: 1.5px solid var(--line);
+  border-radius: 99px;
+  background: #fff;
+  color: var(--ink);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--brand);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(153, 0, 102, 0.15);
+}
+
+input.err {
+  border-color: #c0392b;
+  background: #fff5f4;
+}
+
+.msg {
+  font-size: 0.95rem;
+  min-height: 1.4em;
+}
+
+.msg.ok {
+  color: #1d7a46;
+  font-weight: 600;
+}
+
+.msg.bad {
+  color: #c0392b;
+}
+
+.note {
+  font-size: 0.82rem;
+  color: var(--mut);
+}
+
+@media (max-width: 900px) {
+  .cta .box {
+    grid-template-columns: 1fr;
+  }
+}

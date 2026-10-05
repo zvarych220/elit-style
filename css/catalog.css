@@ -1,0 +1,67 @@
+/* Catalog Section & Filter Tabs */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.tabs button {
+  font: inherit;
+  font-weight: 600;
+  border: 1.5px solid var(--line);
+  background: #fff;
+  color: var(--mut);
+  padding: 8px 20px;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tabs button:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.tabs button[aria-pressed="true"] {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(153, 0, 102, 0.25);
+}
+
+.item {
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.item .pic {
+  height: 155px;
+  position: relative;
+}
+
+.item .body {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.item .body h3 {
+  color: var(--plum);
+  margin-bottom: 6px;
+}
+
+.item .price {
+  margin-top: auto;
+  padding-top: 16px;
+  font-weight: 800;
+  color: var(--brand);
+  font-size: 1.2rem;
+}
+
+.item[hidden] {
+  display: none;
+}

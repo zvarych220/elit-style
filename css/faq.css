@@ -1,0 +1,50 @@
+/* FAQ Accordion Section */
+details {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 22px;
+  margin-bottom: 12px;
+  transition: all 0.2s ease;
+}
+
+details[open] {
+  border-color: var(--brand);
+  box-shadow: 0 6px 20px rgba(153, 0, 102, 0.08);
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--plum);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  user-select: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: "+";
+  color: var(--brand);
+  font-size: 1.4rem;
+  line-height: 1;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+details[open] summary::after {
+  content: "–";
+}
+
+details p {
+  color: var(--mut);
+  margin-top: 12px;
+  line-height: 1.65;
+}
